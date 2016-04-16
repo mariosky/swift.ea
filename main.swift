@@ -46,10 +46,10 @@ repeat {
     
      let timeInterval: Double = end.timeIntervalSinceDate(start);
     
-    var str = NSString(format: "Swift Bool Array,%d,%.9f",length, timeInterval)
+    var str = NSString(format: "Swift Bool Array,%d,%f",length, timeInterval)
     
     print(str)
     length = length*2;
     
-} while length < MAXLENGTH
+} while length <= MAXLENGTH
 
